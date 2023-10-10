@@ -22,13 +22,13 @@ export const Navbar = () => {
       </Nav.Brand>
       <Nav.Toggle />
       <Nav.Collapse className='font-chilanka'>       
-        <NavLink to="#" className="NavLink">
+        <NavLink to="/BasicIntegrals" className="NavLink">
           Integrales Basicas
         </NavLink>
-        <NavLink to="#" className="NavLink">
+        <NavLink to="/IntegralsBySubsitution" className="NavLink">
           Integrales por Sustitución
         </NavLink>
-        <NavLink to="#" className="NavLink">
+        <NavLink to="/IntegralByParts" className="NavLink">
           Integrales por Partes
         </NavLink>
       </Nav.Collapse>

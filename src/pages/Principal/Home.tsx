@@ -16,7 +16,7 @@ const Home = () => {
               AL TALLER DE INTEGRALES
             </h2>
           </div>
-          <div className="flex justify-center md:absolute md:right-[-85px] md:max-w-[40%] lg:right-[-140px] xl:right-[-100px]">
+          <div className="flex justify-center md:absolute md:right-[-85px]  md:max-w-[35%] lg:right-[-140px] lg:max-w-[50%] xl:right-[-100px]">
             <img
               src={welcome}
               alt="Bienvenidos"

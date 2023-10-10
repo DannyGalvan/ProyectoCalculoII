@@ -15,7 +15,7 @@ export default {
         four:'#FFC98B',
         welcome: '#FFE9CF',
         workshop: '#DC6620',
-        integrate: '#CD9351',
+        integrate: '#CD9351', 
         tutorial: '#827E6A',
       },
       fontFamily: {

@@ -15,7 +15,6 @@ export const Grid = ({ children, sm, md, lg, xl, className }: GridProps) => {
     lg ? `gcol-lg-${lg}` : '',
     xl ? `gcol-xl-${xl}` : '',
     'px-2',
-    'gap-4',
     className,
   ];
   return <div className={colClasses.join(' ')}>{children}</div>;
