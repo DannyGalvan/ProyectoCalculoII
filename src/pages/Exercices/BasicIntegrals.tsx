@@ -7,13 +7,13 @@ const data = Array.from({ length: 10 }).map((_, i) => `Ejercicio ${i + 1}`);
 
 const BasicIntegrals = () => {
   return (
-    <section className="flex flex-col items-center">
+    <section className="mx-4 flex flex-col items-center">
       <Title />
       <Grid
         sm={1}
         md={2}
         lg={3}
-        className="mt-10 w-full justify-center gap-16 px-20 py-10"
+        className="w-full gap-16 p-10 md:px-20"
       >
         {data.map((item, index) => (
           <Card
