@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "./Grid.css";
+@import "./Flex.css";
+@import "./spinners.css";
+@import "./Components.css";
+@import "./App.css";
+@import "tailwindcss/utilities";
+
+
+

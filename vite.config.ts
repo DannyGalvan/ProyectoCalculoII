@@ -5,4 +5,9 @@ import react from '@vitejs/plugin-react-swc';
 export default defineConfig({
   plugins: [react()],
   base: 'https://DannyGalvan.github.io/ProyectoCalculoII',
+  envPrefix: 'VITE_',
+  server: {
+    port: 3000,
+    open: true,
+  },
 });
