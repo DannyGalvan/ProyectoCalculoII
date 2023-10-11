@@ -11,7 +11,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       .querySelector('body')
       ?.style.setProperty(
         'background-color',
-        BACKGROUNDS[route.pathname] || '#C6C09C'
+        BACKGROUNDS[route.pathname.replace(/\/\d+$/, '')] || '#C6C09C'
       );
   }, [route.pathname]);
 

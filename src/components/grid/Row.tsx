@@ -4,5 +4,5 @@ interface RowProps {
 }
 
 export const Row = ({ children, className }: RowProps) => {
-  return <div className={`mx-4 flex flex-wrap ${className}`}>{children}</div>;
+  return <div className={`flex flex-wrap ${className}`}>{children}</div>;
 };
