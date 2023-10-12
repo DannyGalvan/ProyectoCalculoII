@@ -38,7 +38,7 @@ const usePlay = ({id, problems, toggleError, toggleFinal, toggleSuccess, key}: P
         setProcess([...process, { problem: selectedItem!, response: item }]);
         setSelectedItem(item);
         setCurrentStep(current);
-        if ( current === problem?.steps.length) {
+        if (current === problem?.steps.length) {
             toggleFinal();
             set(problem?.id ?? 0);
         }

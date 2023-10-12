@@ -2,13 +2,15 @@ import { Button, Modal } from 'flowbite-react';
 import { Row } from '../grid/Row';
 import { Col } from '../grid/Col';
 import Fin from '/assets/Final.png';
+import { Link } from 'react-router-dom';
 
 interface SuccessProps {
   open: boolean;
   setOpen: () => void;
+  url: string;
 }
 
-export const Final = ({ open, setOpen }: SuccessProps) => {
+export const Final = ({ open, setOpen, url }: SuccessProps) => {
   return (
     <Modal show={open}>
       <Modal.Body className="rounded-2xl bg-[#FFB284] p-4 shadow-[5px_5px_2px_0px_#DC6620]">
@@ -25,9 +27,9 @@ export const Final = ({ open, setOpen }: SuccessProps) => {
               className="rounded-full bg-container shadow-[5px_5px_2px_0px_#DC6620]"
               onClick={setOpen}
             >
-              <p className="px-2 font-chilanka text-xl text-[#DC6620]">
+              <Link to={url} className="px-2 font-chilanka text-xl text-[#DC6620]">
                 Siguiente
-              </p>
+              </Link>
             </Button>
           </Col>
         </Row>

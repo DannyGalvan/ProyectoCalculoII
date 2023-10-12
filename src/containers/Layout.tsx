@@ -18,7 +18,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="w-full">
       <Navbar />
-      <main>{children}</main>
+      <main className='py-6'>{children}</main>
     </div>
   );
 };
