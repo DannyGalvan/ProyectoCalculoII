@@ -6,7 +6,7 @@ export const Navbar = () => {
   return (
     <Nav
       rounded
-      className='mb-8 w-full bg-four shadow-[8px_10px_6px_3px_#827E6A] lg:w-3/4'
+      className='mb-6 w-full bg-four p-1.5 shadow-[8px_10px_6px_3px_#827E6A] lg:w-3/4'
     >
       <Nav.Brand
         href="#/"

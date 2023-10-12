@@ -1,78 +1,59 @@
 import { useParams } from 'react-router-dom';
-import { Option, Process, basicProblems } from '../../config/basic';
+import { basicProblems } from '../../config/basic';
 import { Col } from '../../components/grid/Col';
 import { Grid } from '../../components/grid/Grid';
 import { Card } from 'flowbite-react';
-import { useState } from 'react';
 import { shuffleArray } from '../../util/shuffle';
 import { Failed } from '../../components/modal/Failed';
 import { useModals } from '../../hooks/useModals';
 import { Success } from '../../components/modal/Success';
 import { Final } from '../../components/modal/Final';
+import usePlay from '../../hooks/usePlay';
 
 const BasicPage = () => {
   const { id } = useParams();
+
   const { error, toggleError, success, toggleSuccess, toggleFinal, final } =
     useModals();
-  const problem = basicProblems.find((item) => item.id === parseInt(id ?? '0'));
-  const initialOptions: Option = {
-    image: problem?.problemImage ?? '',
-    correct: false,
-  };
 
-  const [message, setMessage] = useState('');
-
-  const [currentStep, setCurrentStep] = useState(0);
-
-  const [selectedItem, setSelectedItem] = useState<Option | null>(
-    initialOptions
-  );
-
-  const [process, setProcess] = useState<Process[]>([]);
-
-  const handleClick = (item: Option) => {
-    if (item.correct) {
-      const current = currentStep + 1;
-      setProcess([...process, { problem: selectedItem!, response: item }]);
-      setSelectedItem(item);
-      setCurrentStep(current);
-      current === problem?.steps.length && toggleFinal();
-      toggleSuccess();
-      setMessage('');
-    } else {
-      toggleError();
-      const step = problem?.steps[currentStep];
-      setMessage(step?.advice ?? '');
-      setCurrentStep(0);
-      setSelectedItem(initialOptions);
-      setProcess([]);
-    }
-  };
+  const { currentStep, handleClick, message, problem, selectedItem, process } =
+    usePlay({
+      id,
+      problems: basicProblems,
+      toggleError,
+      toggleSuccess,
+      toggleFinal,
+      key: 'basic',
+    });
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <Col md="8" className="flex flex-col">
+      <Col md="8" className="mb-3 flex flex-col">
         <Card className="flex flex-col justify-center rounded-2xl border-0 bg-container shadow-[1px_10px_8px_7px_#B46767]">
           <div className="flex justify-center">
-            <img src={selectedItem?.image} alt="" className="max-w-[15%]" />
+            <img
+              src={selectedItem?.image}
+              alt="Problema"
+              className="max-w-[15%]"
+            />
           </div>
         </Card>
       </Col>
       <Col className="flex flex-col items-center justify-center md:flex-row">
         <Col xs="12" md="10" className="px-10 md:px-16">
-          <Card className="flex h-[53vh] flex-col overflow-y-auto rounded-2xl border-0 bg-container shadow-[1px_10px_8px_7px_#B46767]">
+          <Card className="flex h-[45vh] flex-col rounded-2xl border-0 bg-container py-2 shadow-[1px_10px_8px_7px_#B46767] md:h-[55vh]">
             {message && (
               <div
-                className={`my-1 flex w-full flex-row rounded-md bg-rose-500 p-2 shadow-lg`}
+                className={`flex w-full flex-row rounded-md bg-rose-500 p-2 shadow-lg`}
               >
                 <div className="ml-1">
                   <p className="font-bold text-white">{message}</p>
                 </div>
               </div>
             )}
-            <div className="h-[30vh]">
+            <div className="flex h-[47vh] flex-wrap items-center overflow-y-auto scrollbar-thin scrollbar-thumb-indigo-500">
               {process.map((item, index) => (
-                <Grid key={index} md={2} className="gap-2">
+                <Grid key={index} md={2} className="gap-3">
                   <article className="flex justify-center">
                     <h3 className="font-chilanka font-bold">
                       Paso {index + 1}
