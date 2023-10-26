@@ -6,6 +6,7 @@ import BasicIntegrals from '../pages/Exercices/BasicIntegrals';
 import IntegralsBySubstitution from '../pages/Exercices/IntegralBySubstitution';
 import IntegralByParts from '../pages/Exercices/IntegralByParts';
 import BasicPage from '../pages/Play/BasicPage';
+import SubstitutionPage from '../pages/Play/SubstitutionPage';
 
 export const Path = () => {
   return (
@@ -18,6 +19,10 @@ export const Path = () => {
           <Route
             path="/IntegralsBySubsitution"
             element={<IntegralsBySubstitution />}
+          />
+          <Route
+            path="/IntegralsBySubsitution/Play/:id"
+            element={<SubstitutionPage />}
           />
           <Route path="/IntegralByParts" element={<IntegralByParts />} />
           <Route path="/Test" element={<Test />} />
