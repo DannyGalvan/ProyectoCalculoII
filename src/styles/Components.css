@@ -9,3 +9,20 @@
 img.shadow-star {
   filter: drop-shadow(5px 8px 1px #b46767);
 }
+
+@keyframes loading {
+  0% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 90%;
+  }
+}
+
+.loading {
+  animation-name: loading;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+}
