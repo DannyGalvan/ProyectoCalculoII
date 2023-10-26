@@ -1,16 +1,19 @@
-import {NavLink} from 'react-router-dom';
-import { Navbar as Nav } from 'flowbite-react';
+import { NavLink } from 'react-router-dom';
+import { Dropdown, Navbar as Nav } from 'flowbite-react';
 import Logo from '/logo/UMG.png';
 
-export const Navbar = () => {
+interface NavbarProps {
+  toggleDerived: () => void;
+  toggleIntegrals: () => void;
+}
+
+export const Navbar = ({ toggleDerived, toggleIntegrals }: NavbarProps) => {
   return (
     <Nav
       rounded
-      className='w-full bg-four p-1.5 shadow-[8px_10px_6px_3px_#827E6A] lg:w-3/4'
+      className="w-full bg-four p-1.5 shadow-[8px_10px_6px_3px_#827E6A] lg:w-3/4"
     >
-      <Nav.Brand
-        href="#/"
-      >
+      <Nav.Brand href="#/">
         <img
           alt="Flowbite React Logo"
           className="mr-3 h-20 sm:h-24"
@@ -21,19 +24,32 @@ export const Navbar = () => {
         </span>
       </Nav.Brand>
       <Nav.Toggle />
-      <Nav.Collapse className='font-chilanka'>       
+      <Nav.Collapse className="font-chilanka">
         <NavLink to="/BasicIntegrals" className="NavLink">
-          Integrales Basicas
+          Basicas
         </NavLink>
         <NavLink to="/IntegralsBySubsitution" className="NavLink">
-          Integrales por Sustitución
+          Por Sustitución
         </NavLink>
         <NavLink to="/IntegralByParts" className="NavLink">
-          Integrales por Partes
+          Por Partes
         </NavLink>
+        <span className="NavLink">
+          <Dropdown label="Formularios" inline>
+            <Dropdown.Item onClick={toggleDerived}>Derivadas</Dropdown.Item>
+            <Dropdown.Item onClick={toggleIntegrals}>Integrales</Dropdown.Item>
+          </Dropdown>
+        </span>
+        <span className="NavLink">
+          <Dropdown label="Tutoriales" inline>
+            <Dropdown.Item><NavLink to="/BasicIntegrals/Tutorial">Basicas</NavLink></Dropdown.Item>
+            <Dropdown.Item><NavLink to="/IntegralByParts/Tutorial">Por Partes</NavLink></Dropdown.Item>
+            <Dropdown.Item><NavLink to="/IntegralsBySubsitution/Tutorial">Por Sustitucion</NavLink></Dropdown.Item>
+          </Dropdown>
+        </span>
       </Nav.Collapse>
     </Nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
