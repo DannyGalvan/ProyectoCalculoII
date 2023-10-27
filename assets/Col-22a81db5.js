@@ -1,1 +1,0 @@
-import{j as e}from"./index-640fec7d.js";const i=({children:t,xs:o,sm:s,md:c,lg:l,className:r})=>{const a=[o?`col-${o}`:"col",s?`col-sm-${s}`:"",c?`col-md-${c}`:"",l?`col-lg-${l}`:"",r,"px-2"];return e.jsx("div",{className:a.join(" "),children:t})};export{i as C};
