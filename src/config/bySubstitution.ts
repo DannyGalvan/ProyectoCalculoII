@@ -24,6 +24,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Las raíces cuadradas también se pueden expresar como una potencia de ½',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral",
       },
       {
         level: 2,
@@ -42,6 +43,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Intenta convertir en u siempre la parte más complicada de la función',
+        instruction: "Encuentra u y du"
       },
       {
         level: 3,
@@ -60,6 +62,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Reemplaza en tu función x por u, teniendo cuidado en dejarlo solo en un mismo termino.',
+        instruction: "Reemplaza U correctamente"
       },
       {
         level: 4,
@@ -78,6 +81,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda utilizar propiedad distributiva y ley de exponentes.',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 5,
@@ -96,6 +100,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que en integrales se suma +1 al exponente y luego se divide en ese mismo valor.',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 6,
@@ -114,6 +119,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'No se te olvide reemplazar el valor de u por tu valor inicial de x',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },
@@ -139,6 +145,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que puedes subir los denominadores cambiándole su exponente a negativo',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 2,
@@ -157,6 +164,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Intenta convertir en u siempre la parte más complicada de la función',
+        instruction: "Encuentra u y du"
       },
       {
         level: 3,
@@ -175,6 +183,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Reemplaza en tu función x por u, teniendo cuidado en dejarlo solo en un mismo termino.',
+        instruction: "Seleccione una opción en donde simplifique correctamente la integral"
       },
       {
         level: 4,
@@ -193,6 +202,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda la factorización del cuadrado de una suma es: a2+2ab+b2',
+        instruction: "Seleccione una opción en donde simplifique correctamente la integral"
       },
       {
         level: 5,
@@ -211,6 +221,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda utilizar propiedad distributiva y ley de exponentes.',
+        instruction: "Seleccione una opción en donde simplifique correctamente la integral"
       },
       {
         level: 6,
@@ -229,6 +240,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Cuando una función se esta sumando o restando puedes dividir cada una en una integral individual. Recuerda que puedes sacar de la integral las constantes',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 7,
@@ -247,6 +259,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que en integrales se suma +1 al exponente y luego se divide en ese mismo valor.',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 8,
@@ -265,6 +278,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'No se te olvide simplificar y convertir tus exponentes negativos a positivos bajándolos nuevamente.',
+        instruction: "Seleccione una opción que se adecue con la simplificación correcta"
       },
       {
         level: 9,
@@ -283,6 +297,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'No se te olvide reemplazar los valores de U por su valor en X y agregar el + C',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },
@@ -308,6 +323,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Intenta convertir en u siempre la parte más complicada de la función y no olvides despejar x.',
+        instruction: "Encuentra u y du"
       },
       {
         level: 2,
@@ -326,6 +342,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Sustituye x por U',
+        instruction: "Sustituye correctamente u en la integral"
       },
       {
         level: 3,
@@ -344,6 +361,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'utiliza propiedad distributiva y regla de exponentes para la multiplicación',
+        instruction: "Seleccione una opción en donde simplifique correctamente la integral"
       },
       {
         level: 4,
@@ -362,6 +380,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Cuando una función se está sumando o restando puedes dividir cada una en una integral individual. Integra sumando +1 en el exponente y dividiéndolo por este mismo exponente.',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 5,
@@ -380,6 +399,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Reemplaza tu U por su valor en X, u=x+1',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 6,
@@ -398,6 +418,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'No se te olvide agregar el  +c',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },
@@ -423,6 +444,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Intenta convertir en u siempre la parte más complicada de la función y despeja x a razón de que pueda ser reemplazado por u',
+        instruction: "Encuentra u y du"
       },
       {
         level: 2,
@@ -441,6 +463,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda tu integral de una forma más fácil en la cual puedas sustituir tu U',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 3,
@@ -459,6 +482,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Remplaza tus x por u, ten cuidado de dejar todo en  términos de u con sus signos correspondientes',
+        instruction: "Reemplaza u en tu integral"
       },
       {
         level: 4,
@@ -477,6 +501,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que puedes pasar tu denominador a numerador cambiándole el signo y en tu integral no olvides sacar tus constantes.',
+        instruction: "Seleccione una opción en donde simplifique correctamente la integral"
       },
       {
         level: 5,
@@ -495,6 +520,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Utiliza propiedad distributiva para simplificar, recuerda que puedes dividir tu integral cuando es separada solo por sumas o restas',
+        instruction: "Seleccione una opción en donde simplifique correctamente la integral"
       },
       {
         level: 6,
@@ -513,6 +539,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Integra sumando +1 a tus exponentes y dividiendo por los mismos',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 7,
@@ -531,6 +558,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Multiplica tu constante por el resultado de tu integración',
+        instruction: "Seleccione una opción en donde simplifique correctamente"
       },
       {
         level: 8,
@@ -549,6 +577,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'No olvides reemplazar tu u por su valor en x',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },
@@ -574,6 +603,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que las raíces cuadradas se pueden expresar como un exponente ½',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 2,
@@ -592,6 +622,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Haz u la parte más complicada que en este caso seria lo que esta adentro de la primera raíz y derivalo.',
+        instruction: "Encuentre u y du"
       },
       {
         level: 3,
@@ -610,6 +641,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que en los despejes siempre es lo opuesto un lado del otro, es raíz lo opuesto es una potencia',
+        instruction: "Despeja x y dx"
       },
       {
         level: 4,
@@ -628,6 +660,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Reemplaza por u todos tus valores de x, teniendo cuidado en todos los signos. No olvides la propiedad distributiva y ley de exponentes en multiplicación.',
+        instruction: "Seleccione una opción en donde simplifique correctamente la integral"
       },
       {
         level: 5,
@@ -646,6 +679,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Reemplaza por u todos tus valores de x, teniendo cuidado en todos los signos. No olvides la propiedad distributiva y ley de exponentes en multiplicación.',
+        instruction: "Seleccione una opción en donde simplifique correctamente la integral"
       },
       {
         level: 6,
@@ -664,6 +698,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'No olvides la propiedad distributiva y ley de exponentes en multiplicación.',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 7,
@@ -682,6 +717,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'No olvides la propiedad distributiva y ley de exponentes en multiplicación.',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 8,
@@ -700,6 +736,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que las constantes debes de sacarlas afuera de la integral',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 9,
@@ -718,6 +755,7 @@ export const bySubstitutionProblems: Problem[] = [
           },
         ],
         advice: 'Integra sumando +1 a tus exponentes y dividiendo por los mismos',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },

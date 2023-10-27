@@ -48,16 +48,14 @@ const PartsPage = () => {
       <Col className="flex flex-col items-center justify-center md:flex-row">
         <Col xs="12" md="10" className="px-10 md:px-16">
           <Card
-            className={`flex ${
-              currentStep !== problem?.steps.length ? 'h-[45vh]' : 'h-[55vh]'
-            } flex-col rounded-2xl border-0 bg-secondary py-2 shadow-[1px_10px_8px_7px_#B46767] ${
-              currentStep !== problem?.steps.length
+            className={`flex ${currentStep !== problem?.steps.length ? 'h-[45vh]' : 'h-[55vh]'
+              } flex-col rounded-2xl border-0 bg-secondary py-2 shadow-[1px_10px_8px_7px_#B46767] ${currentStep !== problem?.steps.length
                 ? 'md:h-[55vh]'
                 : 'md:h-[65vh]'
-            }`}
+              }`}
           >
             <p className="text-center font-chilanka font-bold">
-              Selecciona la respuesta correcta al enunciado
+              {problem?.steps[currentStep]?.instruction}
             </p>
             {message && (
               <div

@@ -4,6 +4,7 @@ export interface Option {
 }
 
 export interface Step {
+  instruction: string;
   level: number;
   options: Option[];
   advice: string;
@@ -17,8 +18,8 @@ export interface Problem {
 }
 
 export interface Process {
-    problem: Option;
-    response: Option;
+  problem: Option;
+  response: Option;
 }
 
 export const basicProblems: Problem[] = [
@@ -44,6 +45,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que en integrales se suma +1 al exponente',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 2,
@@ -62,6 +64,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Luego de sumar 1 al exponente se divide por el mismo valor del exponente resultante.',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 3,
@@ -80,6 +83,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'No olvides agregar + C a tu integral.',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
     ],
   },
@@ -105,6 +109,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerde que la integral de e^x es igual que su derivada',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 2,
@@ -123,7 +128,8 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'No se olvide de agregar el + C en su respuesta de integral.',
-      },      
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
+      },
     ],
   },
   {
@@ -148,6 +154,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Si escribimos un 2 en el integrando, tendremos la derivada del seno del ángulo doble',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 2,
@@ -166,6 +173,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Ten cuidado al integrar',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
       {
         level: 3,
@@ -184,6 +192,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'No olvides colocar el + C a tu integral.',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },
@@ -209,6 +218,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Las constantes puedes sacarlas de tu integral',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 2,
@@ -227,6 +237,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que en integrales se suma +1 al exponente y luego se divide en ese mismo valor',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 3,
@@ -245,6 +256,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'No olvides colocar el + C a tu integral. ',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },
@@ -270,6 +282,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Cuando la ecuación se está sumando o restando puedes dividirla en varias partes las cuales integraras después',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 2,
@@ -288,6 +301,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que en integrales se suma +1 al exponente y luego se divide en ese mismo valor',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 3,
@@ -306,6 +320,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'No olvides colocar el + C a tu integral.',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },
@@ -331,6 +346,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Reescribe la integral sacando la constante y convirtiendo de raíz a exponente',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 2,
@@ -349,6 +365,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que en multiplicación se suman exponentes',
+        instruction: "Seleccione una opción en donde simplifique correctamente la integral"
       },
       {
         level: 3,
@@ -367,6 +384,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que en integrales se suma +1 al exponente y luego se divide en ese mismo valor',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 4,
@@ -385,6 +403,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Si tienes en el denominador una fracción puedes subir a multiplicar el denominador de esa fracción y dejar el numerador en la parte de abajo',
+        instruction: "Seleccione una opción que se adecue con la simplificación de la función"
       },
       {
         level: 5,
@@ -403,6 +422,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que la multiplicación de fracciones es lineal',
+        instruction: "Seleccione una opción que se adecue con la simplificación de la función"
       },
       {
         level: 6,
@@ -421,6 +441,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda simplificar términos y no olvidar agregar el + C.',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },
@@ -446,6 +467,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Si aplicas una sustitución al denominador te darás cuenta que se vuelve negativa la derivada.',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 2,
@@ -464,6 +486,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Como es una función racional simple, su integral será un logaritmo',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 3,
@@ -482,6 +505,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'No olvides colocar el + C a tu integral.',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },
@@ -507,6 +531,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Las raíces cuadradas también se pueden expresar como una potencia de ½',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 2,
@@ -525,6 +550,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Cuando la ecuación se está sumando o restando puedes dividirla en varias partes las cuales integraras después',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 3,
@@ -543,6 +569,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que en integrales se suma +1 al exponente y luego se divide en ese mismo valor',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 4,
@@ -561,6 +588,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Si tienes en el denominador una fracción puedes subir a multiplicar el denominador de esa fracción y dejar el numerador en la parte de abajo.',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },
@@ -586,6 +614,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que puedes subir los denominadores cambiándole su exponente a negativo, una raíz cuadrada también se expresa como 1/2',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 2,
@@ -604,6 +633,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'En las multiplicaciones recuerda que se suman los exponentes.',
+        instruction: "Seleccione una opción en donde simplifique correctamente la integral"
       },
       {
         level: 3,
@@ -622,9 +652,10 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que en integrales se suma +1 al exponente y luego se divide en ese mismo valor',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
-        level: 3,
+        level: 4,
         options: [
           {
             image: './problems/BasicIntegrals/9/step/4/IN1_P4.PNG',
@@ -640,6 +671,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Si tienes en el denominador una fracción puedes subir a multiplicar el denominador de esa fracción y dejar el numerador en la parte de abajo.',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
   },
@@ -665,6 +697,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Cuando una función se esta sumando o restando puedes dividir cada una en una integral individual.',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 2,
@@ -683,6 +716,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que puedes sacar afuera de la integral las constantes',
+        instruction: "Seleccione una opción en donde reescriba correctamente la integral"
       },
       {
         level: 3,
@@ -701,6 +735,7 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Recuerda que en integrales se suma +1 al exponente y luego se divide en ese mismo valor',
+        instruction: "Seleccione una opción que se adecue con la integración de la integral"
       },
       {
         level: 4,
@@ -719,7 +754,8 @@ export const basicProblems: Problem[] = [
           },
         ],
         advice: 'Si tienes en el denominador una fracción puedes subir a multiplicar el denominador de esa fracción y dejar el numerador en la parte de abajo.',
+        instruction: "Seleccione una opción que donde integre correctamente"
       },
     ],
-  }, 
+  },
 ];
