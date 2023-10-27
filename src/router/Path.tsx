@@ -2,7 +2,6 @@ import { lazy, Suspense } from 'react';
 import { Route, Routes, HashRouter } from 'react-router-dom';
 
 const Home = lazy(() => import('../pages/Principal/Home'));
-const Test = lazy(() => import('../pages/Principal/Test'));
 const Layout = lazy(() => import('../containers/Layout'));
 const BasicIntegrals = lazy(() => import('../pages/Exercices/BasicIntegrals'));
 const IntegralsBySubstitution = lazy(() => import('../pages/Exercices/IntegralBySubstitution'));
@@ -43,7 +42,6 @@ export const Path = () => {
             <Route path="/IntegralByParts" element={<IntegralByParts />} />
             <Route path="/IntegralByParts/Tutorial" element={<ByPartsTutorialPage />} />
             <Route path="/IntegralByParts/Play/:id" element={<PartsPage />} />
-            <Route path="/Test" element={<Test />} />
           </Routes>
         </Layout>
       </Suspense>
