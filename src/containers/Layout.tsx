@@ -31,7 +31,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <Modal show={showDerived} onClose={toggleShowDerived}>
         <article className='flex flex-col items-center p-4'>
           <img src={derived} />
-          <Col xs='12' md='6' >
+          <Col xs='12' md='6' className='mx-10 mt-2'>
             <Button color='failure' onClick={toggleShowDerived} fullSized>Cerrar</Button>
           </Col>
         </article>
@@ -39,7 +39,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <Modal show={showIntegrals} onClose={toggleShow}>
         <article className='flex flex-col items-center p-4'>
           <img src={integrals} className='w-[90%]' />
-          <Col xs='12' md='6' >
+          <Col xs='12' md='6' className='mx-10 mt-2'>
             <Button color='failure' onClick={toggleShow} fullSized>Cerrar</Button>
           </Col>
         </article>

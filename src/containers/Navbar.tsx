@@ -8,6 +8,7 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ toggleDerived, toggleIntegrals }: NavbarProps) => {
+
   return (
     <Nav
       rounded
@@ -42,9 +43,15 @@ export const Navbar = ({ toggleDerived, toggleIntegrals }: NavbarProps) => {
         </span>
         <span className="NavLink">
           <Dropdown label="Tutoriales" inline>
-            <Dropdown.Item><NavLink to="/BasicIntegrals/Tutorial">Basicas</NavLink></Dropdown.Item>
-            <Dropdown.Item><NavLink to="/IntegralByParts/Tutorial">Por Partes</NavLink></Dropdown.Item>
-            <Dropdown.Item><NavLink to="/IntegralsBySubsitution/Tutorial">Por Sustitucion</NavLink></Dropdown.Item>
+            <NavLink to="/BasicIntegrals/Tutorial">
+              <Dropdown.Item>Basicas</Dropdown.Item>
+            </NavLink>
+            <NavLink to="/IntegralByParts/Tutorial">
+              <Dropdown.Item>Por Partes</Dropdown.Item>
+            </NavLink>
+            <NavLink to="/IntegralsBySubsitution/Tutorial">
+              <Dropdown.Item>Por Sustitucion</Dropdown.Item>
+            </NavLink>
           </Dropdown>
         </span>
       </Nav.Collapse>
