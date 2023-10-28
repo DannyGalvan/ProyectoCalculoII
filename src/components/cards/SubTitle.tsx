@@ -17,7 +17,7 @@ export const SubTitle = () => {
                         Integración
                     </h2>
                 </div>
-                <div className="flex justify-center md:absolute md:right-[5%] md:max-w-[25%] lg:right-[5%] xl:right-[5%]">
+                <div className="flex justify-center md:absolute md:right-[0%] md:max-w-[25%] lg:right-[5%] xl:right-[5%] xl:p-12">
                     <img
                         src={subTitle}
                         alt="Bienvenidos"

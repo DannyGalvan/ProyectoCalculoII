@@ -38,7 +38,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       </Modal>
       <Modal show={showIntegrals} onClose={toggleShow}>
         <article className='flex flex-col items-center p-4'>
-          <img src={integrals} className='h-[70vh] w-[80%]' />
+          <img src={integrals} className='h-[70vh] w-full sm:w-[80%]' />
           <Col xs='12' md='6' className='mx-10 mt-2'>
             <Button color='failure' onClick={toggleShow} fullSized>Cerrar</Button>
           </Col>
