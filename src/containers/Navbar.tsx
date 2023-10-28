@@ -12,7 +12,7 @@ export const Navbar = ({ toggleDerived, toggleIntegrals }: NavbarProps) => {
   return (
     <Nav
       rounded
-      className="w-full bg-four p-1.5 shadow-[8px_10px_6px_3px_#827E6A] lg:w-3/4"
+      className="relative z-50 w-full bg-four p-1.5 shadow-[8px_10px_6px_3px_#827E6A] lg:w-3/4"
     >
       <Nav.Brand href="#/">
         <img
